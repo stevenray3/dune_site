@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dune - Sortie en 2021</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scripts/leaflet.css" />
+    <link rel="stylesheet" href="style/justifiedGallery.min.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="medias/Dune_Logo.png" alt="Dune" />
+      <p>15 septembre 2021 au cinéma</p>
+      <a href="https://www.premiere.fr/film/Dune-0">Voir le film</a>
+    </header>
+
+    <main>
+      <section id="s1">
+        <video id="trailer" muted autoplay loop>
+          <source src="medias/DUNE.webm" />
+        </video>
+        <h1 id="dune-h1">Le film sur la saga culte de F. Herbert</h1>
+      </section>
+      <section id="s2">
+        <article>
+          <h2>Un film très attendu</h2>
+          <h3>Origine</h3>
+          <p>
+            Dune est une adaptation du roman du même nom écrit par Frank Herbert
+            publié en 1965. Le roman "Dune" fait partie d'une série de 7 romans
+            écrits par Herbert.
+          </p>
+          <h3>Synopsis</h3>
+          <p>
+            Dans un futur lointain de l'humanité, le duc Leto Atréides accepte
+            la gestion de la dangereuse planète désertique Arrakis, également
+            connue sous le nom de « Dune », qui est la seule source de la
+            substance la plus précieuse de cet univers, « l’Épice », une drogue
+            qui prolonge la vie humaine, fournit des niveaux de pensée
+            surhumains et rend possible le voyage longue distance dans
+            l'espace.<br />
+            Bien que Leto sache que cette opportunité est un piège complexe
+            tendu par ses ennemis, il emmène sa concubine Bene Gesserit, dame
+            Jessica, son jeune fils et héritier Paul, et ses conseillers les
+            plus fiables sur Arrakis. Leto prend le contrôle de l'opération
+            d'extraction d'Epice, rendue périlleuse par la présence de vers de
+            sable géants. Mais, après une trahison amère qui conduit à la mort
+            du duc, Paul et Jessica arrivent jusqu’aux Fremen, le peuple
+            autochtone d'Arrakis qui vit dans le désert profond de la planète.
+            (source : Wikipedia)
+          </p>
+          <p>
+            À cause de la pandémie mondiale du COVID-19, le tournage du film a
+            été suspendu.
+          </p>
+        </article>
+      </section>
+      <section id="s3">
+        <article>
+          <h2>Personnages</h2>
+          <p>
+            Timothée Chalamet :
+            <i>Paul Atréides</i>
+            <img src="medias/charas/timothee.jpg" alt="" />
+          </p>
+          <p>
+            Rebecca Ferguson :
+            <i>dame Jessica</i>
+            <img src="medias/charas/rebecca.webp" alt="" />
+          </p>
+          <p>
+            Oscar Isaac :
+            <i>le duc Leto Atréides</i>
+            <img src="medias/charas/oscar.jpg" alt="" />
+          </p>
+          <p>
+            Josh Brolin :
+            <i>Gurney Halleck</i>
+            <img src="medias/charas/josh.jpg" alt="" />
+          </p>
+          <p>
+            Stellan Skarsgård :
+            <i>le baron Vladimir Harkonnen</i>
+            <img src="medias/charas/stellan.jpg" alt="" />
+          </p>
+          <p>
+            David Bautista :
+            <i>Glossu Rabban</i>
+            <img src="medias/charas/david.jpg" alt="" />
+          </p>
+          <p>
+            Zendaya :
+            <i>Chani</i>
+            <img src="medias/charas/zendaya.webp" alt="" />
+          </p>
+
+          <p></p>
+          <p>
+            Chang Chen :
+            <i>le docteur Wellington Yueh</i>
+            <img src="medias/charas/chang.jpg" alt="" />
+          </p>
+          <p>
+            Jason Momoa :
+            <i>Duncan Idaho</i>
+            <img src="medias/charas/jason.jpg" alt="" />
+          </p>
+        </article>
+      </section>
+      <section id="s4">
+        <div>
+          <h2>Galerie</h2>
+          <div id="galerie">
+            <a href="medias/dune-1.png">
+              <img src="medias/dune-1.png" alt="Ére post-Covid" />
+            </a>
+            <a href="medias/dune-2.webp">
+              <img src="medias/dune-2.webp" alt="Iron Man et Captain America" />
+            </a>
+            <a href="medias/dune-3.jpg">
+              <img src="medias/dune-3.jpg" alt="Dans le canyon de 127 Heures" />
+            </a>
+            <a href="medias/starwarsdaguesith.jpeg">
+              <img
+                src="medias/starwarsdaguesith.jpeg"
+                alt="Kylo Ren et la dague Sith"
+              />
+            </a>
+            <a href="medias/passagethanos.jpeg">
+              <img
+                src="medias/passagethanos.jpeg"
+                alt="Après le passage de Thanos"
+              />
+            </a>
+            <a href="medias/marchelego.jpg">
+              <img src="medias/marchelego.jpg" alt="Marcher sur des LEGO" />
+            </a>
+            <a href="medias/comiccon.png">
+              <img
+                src="medias/comiccon.png"
+                alt="À la Comic Con de San Diego"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="s5">
+        <div>
+          <div>
+            <h2>Où le voir</h2>
+            <button id="geoloc">Trouver cinémas près de moi</button>
+          </div>
+
+          <div id="mapid"></div>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <nav>
+        <a href="#s1">Dune</a>
+        <a href="#s2">Le film attendu</a>
+        <a href="#s3">Personnages</a>
+        <a href="#s4">Galerie</a>
+        <a href="#s5">Où le voir</a>
+      </nav>
+    </aside>
+
+    <footer>
+      <nav>
+        <ul>
+          <li>Sections</li>
+          <li><a href="#s1">Dune</a></li>
+          <li><a href="#s2">Le film attendu</a></li>
+          <li><a href="#s3">Personnages</a></li>
+          <li><a href="#s4">Galerie</a></li>
+          <li><a href="#s5">Où le voir</a></li>
+        </ul>
+        <p>&copy; Steven Rollet 2020</p>
+        <p>
+          Ce site n'est pas le site officiel,<br />pour consulter le site
+          officiel, merci de suivre
+          <a href="https://www.dunemovie.net/">ce lien</a>.
+        </p>
+      </nav>
+    </footer>
+    <script src="scripts/ressources/cinema_fr.geojson" async defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+      async
+      defer
+    ></script>
+    <script src="scripts/leaflet.js" async defer></script>
+    <script src="scripts/parallax.js" async defer></script>
+    <script src="scripts/jquery.justifiedGallery.min.js" async defer></script>
+    <script src="scripts/script.js" async defer></script>
+  </body>
+</html>

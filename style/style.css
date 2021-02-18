@@ -1,0 +1,325 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+html {
+  background-color: black;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8vh;
+  width: 100%;
+  padding: 0 1rem;
+  z-index: 2;
+  background: black;
+}
+
+header img {
+  height: 100%;
+  width: auto;
+}
+
+header a {
+  text-decoration: none;
+  height: 8vh;
+  padding: 0 1rem;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: goldenrod;
+  color: white;
+}
+
+header a:hover {
+  background-color: #e4b849;
+}
+
+main {
+  width: 100%;
+}
+
+main section {
+  width: 100%;
+  height: 92vh;
+  padding-top: 8vh;
+  scroll-snap-align: start;
+}
+
+main section#s2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#s2 article {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+main section#s2 article h2,
+main section#s2 article h3 {
+  width: 50%;
+  margin: auto;
+}
+
+main section#s2 article h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+main section#s2 article p {
+  margin: auto auto 1rem auto;
+  line-height: 1.5rem;
+  text-align: justify;
+  width: 50%;
+}
+
+main section#s3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#s3 article {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+main section#s3 article h2,
+main section#s3 article h3 {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+main section#s3 article h2 {
+  text-align: center;
+}
+
+main section#s3 article p {
+  margin: auto auto 1rem auto;
+  line-height: 2rem;
+  text-align: justify;
+  width: 50%;
+}
+
+main section#s3 article p i {
+  color: goldenrod;
+  font-weight: bolder;
+}
+
+main section#s3 article p img {
+  visibility: hidden;
+  width: 15%;
+  height: 45%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 2;
+  position: absolute;
+  right: 12vw;
+  top: 210vh;
+}
+
+main section#s3 article p i:hover ~ img {
+  visibility: visible;
+}
+
+main section#s4, main section#s5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#s4 > div, main section#s5 > div {
+  width: 70%;
+}
+
+main section#s5 > div > div:not(#mapid) {
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#s5 #geoloc {
+  text-decoration: none;
+  height: 8vh;
+  padding: 0 1rem;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+}
+
+main section#s5 #geoloc:hover {
+  background-color: #e4b849;
+}
+
+main section#s5 #mapid {
+  margin-top: 1rem;
+  height: 500px;
+}
+
+main #trailer {
+  width: 100%;
+  height: 92vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .5;
+}
+
+main #dune-h1 {
+  position: absolute;
+  top: 46vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+aside {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  background-color: #000000;
+  padding: 2vw;
+}
+
+aside nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+aside nav a {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+aside nav a:hover {
+  -webkit-text-decoration: white 2px underline;
+          text-decoration: white 2px underline;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(goldenrod), to(darkgoldenrod));
+  background-image: linear-gradient(to top, goldenrod, darkgoldenrod);
+  margin-top: 8vh;
+  height: 50vh;
+  width: 100%;
+  scroll-snap-align: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer nav * {
+  width: 30%;
+  height: 80%;
+}
+
+div.parallax-mirror {
+  top: 8vh !important;
+}
+
+.leaflet-popup-content {
+  line-height: 1 !important;
+}
+/*# sourceMappingURL=style.css.map */
